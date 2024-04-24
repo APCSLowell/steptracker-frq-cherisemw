@@ -10,7 +10,7 @@ public class StepTracker
   goal = num;
  }
 
- public void addDaiySteps(int addedSteps){
+ public void addDailySteps(int addedSteps){
   steps += addedSteps;
   days++;
  }
