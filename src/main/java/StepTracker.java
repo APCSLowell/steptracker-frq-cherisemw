@@ -1,5 +1,28 @@
 import java.util.ArrayList;
 public class StepTracker
 {
- /* to be implemented here */
+ private int goal;
+ private int steps = 0;
+ private int actDays = 0;
+ private int days = 0;
+ 
+ public StepTracker(int num){
+  goal = num;
+ }
+
+ public void addDaiySteps(int addedSteps){
+  steps += addedSteps;
+  days++;
+ }
+
+ public int activeDays(){
+  if (steps >= goal){
+   actDays += 1;
+  }
+  return actDays;
+ }
+
+ public double averageSteps(){
+  return (double)steps/(double)days;
+ }
 } 
